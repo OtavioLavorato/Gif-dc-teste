@@ -3,28 +3,21 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Trocar Imagem ao Clicar</title>
-    <style>
-        img {
-            cursor: pointer;
-            /* muda o cursor para mãozinha */
-            width: 300px;
-            /* tamanho da imagem */
-        }
-    </style>
+
+    <!-- Open Graph tags (Discord lê isso) -->
+    <meta property="og:type" content="video.other">
+    <meta property="og:title" content="😎 Meu GIF exclusivo">
+    <meta property="og:description" content="Esse GIF aparece direto do meu site.">
+    <meta property="og:image" content="https://otaviolavorato.github.io/Gif-dc-teste/imagem.jpg">
+    <!-- Para preview animado, use MP4 -->
+    <meta property="og:video" content="https://otaviolavorato.github.io/Gif-dc-teste/imagem.jpg">
+    <meta property="og:video:type" content="video/mp4">
+    <meta property="og:video:width" content="480">
+    <meta property="og:video:height" content="270">
 </head>
 
 <body>
-    <!-- Imagem inicial -->
-    <img id="meuGif" src="https://otaviolavorato.github.io/Gif-dc-teste/imagem.jpg" alt="GIF exemplo">
-
-    <script>
-        const imagem = document.getElementById('meuGif');
-        imagem.addEventListener('click', () => {
-            // Troca a imagem ao clicar
-            imagem.src = "https://otaviolavorato.github.io/Gif-dc-teste/outra-imagem.jpg";
-        });
-    </script>
+    <img src="https://otaviolavorato.github.io/Gif-dc-teste/imagem.jpg" alt="GIF exemplo">
 </body>
 
 </html>
